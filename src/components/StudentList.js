@@ -7,7 +7,7 @@ import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 export default function StudentList() {
   const [students, setStudents] = useState([]);
 
-  useEffect(() => {
+    useEffect(() => {
     getStudents();
   }, []);
 
@@ -43,7 +43,7 @@ export default function StudentList() {
                 <tr>
                   <td>{student.id}</td>
                   <td>{student.name}</td>
-                  <td>{student.address}</td>
+                    <td>{student.address}</td>
                   <td>
                      <ButtonGroup>
                       <Button size="sm" variant="outline-primary"><FontAwesomeIcon icon={faEdit}> Edit </FontAwesomeIcon></Button>{ ' '}
