@@ -7,7 +7,7 @@ import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 export default function StudentList() {
   const [students, setStudents] = useState([]);
 
-    useEffect(() => {
+      useEffect(() => {
     getStudents();
   }, []);
 
@@ -30,7 +30,7 @@ export default function StudentList() {
                 <th>Student Id</th>
                 <th>Student Name</th>
                 <th>Student Address</th>
-                <th>Edit/Delete</th>
+                  <th>Edit/Delete</th>
               </tr>
             </thead>
             <tbody>
