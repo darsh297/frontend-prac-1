@@ -34,7 +34,7 @@ export default function StudentList() {
               </tr>
             </thead>
             <tbody>
-              {students.length === 0 ? (
+                {students.length === 0 ? (
                 <tr>
                   <td colSpan={3}>{students.length} Studnets Available!!!</td>
                 </tr>
