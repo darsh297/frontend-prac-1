@@ -11,7 +11,7 @@ export default function StudentList() {
     getStudents();
   }, []);
 
-  let getStudents = () => {
+   let getStudents = () => {
     axios
       .get("http://localhost:8080/listStudents")
       .then((response) => setStudents(response.data))
